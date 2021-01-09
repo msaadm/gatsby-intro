@@ -51,7 +51,7 @@ const Hero = () => {
     }
   `);
 
-  console.log(image);
+  //   console.log(image);
   return (
     <ImageBackground tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextBox>

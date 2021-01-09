@@ -4,7 +4,7 @@ module.exports = {
     description:
       'A site we built together during a full-day Frontend Masters Gatsby workshop!',
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  //flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
@@ -32,6 +32,12 @@ module.exports = {
       options: {
         name: 'images',
         path: 'images',
+      },
+    },
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: '36829264925',
       },
     },
   ],
