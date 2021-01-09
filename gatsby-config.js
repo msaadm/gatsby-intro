@@ -4,6 +4,7 @@ module.exports = {
     description:
       'A site we built together during a full-day Frontend Masters Gatsby workshop!',
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
@@ -15,6 +16,8 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve('./src/components/layout.js'),
         },
+        gatsbyRemarkPlugins: ['gatsby-remark-images'],
+        plugins: ['gatsby-remark-images'],
       },
     },
     {
